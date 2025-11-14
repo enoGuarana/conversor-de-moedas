@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.conversor > div {
+    margin-bottom: 20px;
+}
+
+.entrada-valor label, .moeda-selecao label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+#quantidade, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que padding não altere a largura total */
+}
+
+.moeda-selecao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.moeda-selecao > div {
+    flex-grow: 1;
+}
+
+.icone-troca {
+    font-size: 1.5em;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icone-troca:hover {
+    transform: rotate(360deg);
+}
+
+#converterBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#converterBtn:hover {
+    background-color: #0056b3;
+}
+
+.resultado {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
